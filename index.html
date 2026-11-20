@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ed">
+  <meta name="description" content="See what is available from the farm and order fresh vegetables for collection.">
+  <title>Nirvana — Farm-fresh, locally grown</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="session-pending">
+  <div class="announcement"><span class="announcement-dot"></span> Grown with care. Collected at the farm.</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nirvana home">
+      <span class="brand-mark" aria-hidden="true">n</span>
+      <span>nirvana<span class="brand-period">.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#our-farm">Our farm</a>
+      <a href="#seasonal">Seasonal</a>
+      <a href="#pickup">Pickup</a>
+    </nav>
+    <div class="header-actions">
+      <button class="text-button" id="account-open" type="button">Sign in</button>
+      <a class="button button-dark button-small" href="#seasonal">Explore harvest <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A little closer to the earth</p>
+        <h1>Good food<br>starts <em>here.</em></h1>
+        <p class="hero-description">Fresh, locally grown vegetables. See what is ready and collect your order at the farm.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#seasonal">See what's growing <span aria-hidden="true">↗</span></a>
+          <a class="quiet-link" href="#pickup"><span class="play-icon" aria-hidden="true">↓</span> How pickup works</a>
+        </div>
+        <div class="hero-note">
+          <div class="avatar-stack" aria-hidden="true"><span>n</span><span>✳</span><span>●</span></div>
+          <span>Grown with intention,<br><strong>picked for your table.</strong></span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-art">
+          <span class="hero-art-label">NIRVANA / LOCAL HARVEST</span>
+          <span class="hero-art-sun"></span>
+          <div class="hero-art-field"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="hero-art-copy"><span>FRESH FROM THE FARM</span><strong>Good food,<br>grown close.</strong></div>
+          <span class="hero-art-stamp">FARM<br>PICKUP</span>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span>Think green. Eat fresh.</span>
+        <a href="#our-farm" aria-label="Scroll to our farm">SCROLL TO EXPLORE <span>↓</span></a>
+        <span class="hero-location"><span class="location-dot"></span> FARM PICKUP · NO DELIVERY YET</span>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+    </section>
+
+    <section class="manifesto section-wrap" data-reveal>
+      <div class="manifesto-marker"><span>01</span><span class="marker-stem"></span><span>02</span></div>
+      <p class="eyebrow">From soil to supper</p>
+      <h2>Not just vegetables.<br><span>A better kind of <em>everyday.</em></span></h2>
+      <p class="manifesto-copy">We believe knowing where your food grows makes every bite a little better. Come see the land, check what's ready, and pick up a harvest grown with care.</p>
+      <div class="manifesto-leaf" aria-hidden="true">✳</div>
+    </section>
+
+    <section class="farm-section" id="our-farm">
+      <div class="section-wrap farm-heading" data-reveal>
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span> 01 / Our approach</p>
+          <h2>Grown close.<br><em>Collected fresh.</em></h2>
+        </div>
+        <p class="farm-intro">A simple way to shop local produce: check what is available, place an order, and collect it directly from the farm.</p>
+      </div>
+      <div class="farm-story section-wrap" data-reveal>
+        <article class="farm-story-main">
+          <span class="farm-story-kicker">NIRVANA · FARM PICKUP</span>
+          <h3>Good food,<br>without the extra miles.</h3>
+          <p>We share the current harvest online so you can plan ahead. Every order is collected at the farm; delivery is not available yet.</p>
+          <a class="farm-story-link" href="#seasonal">See the current harvest <span aria-hidden="true">↗</span></a>
+        </article>
+        <div class="farm-story-details">
+          <div><span>01</span><p><strong>Check availability</strong>Live stock and prices are shown before checkout.</p></div>
+          <div><span>02</span><p><strong>Pay securely</strong>Complete payment through PhonePe checkout.</p></div>
+          <div><span>03</span><p><strong>Collect at the farm</strong>The farm confirms your pickup order.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seasonal-section section-wrap" id="seasonal">
+      <div class="seasonal-heading" data-reveal>
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> 02 / What's available</p><h2>In season,<br><em>ready to collect.</em></h2></div>
+        <div class="seasonal-aside"><p>Browse today's farm stock, see the price, and pay online before collecting your order.</p><span class="availability-note"><span class="live-dot"></span> Live stock · farm pickup only</span></div>
+      </div>
+      <div class="produce-grid" id="produce-grid" data-reveal>
+        <article class="produce-card produce-card-large">
+          <div class="produce-visual produce-tomato"><span class="produce-index">01 / FRUITING</span><span class="availability" data-stock="garden-tomatoes">Checking stock</span><div class="produce-illustration tomato-art" aria-hidden="true"><span></span><i></i></div><span class="produce-scribble">sun<br>kissed</span></div>
+          <div class="produce-details"><div><h3>Garden tomatoes</h3><p>Sweet, bright &amp; full of sunshine</p><span class="product-price" data-price="garden-tomatoes">Price not set</span></div><button class="add-button" data-product="garden-tomatoes" type="button" aria-label="Add garden tomatoes to order" disabled>+</button></div>
+        </article>
+        <article class="produce-card">
+          <div class="produce-visual produce-greens"><span class="produce-index">02 / LEAFY</span><span class="availability" data-stock="leafy-greens">Checking stock</span><div class="produce-illustration greens-art" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div></div>
+          <div class="produce-details"><div><h3>Leafy greens</h3><p>Tender, crisp &amp; just picked</p><span class="product-price" data-price="leafy-greens">Price not set</span></div><button class="add-button" data-product="leafy-greens" type="button" aria-label="Add leafy greens to order" disabled>+</button></div>
+        </article>
+        <article class="produce-card">
+          <div class="produce-visual produce-roots"><span class="produce-index">03 / ROOTS</span><span class="availability" data-stock="root-vegetables">Checking stock</span><div class="produce-illustration roots-art" aria-hidden="true"><i></i><i></i><i></i><b></b></div></div>
+          <div class="produce-details"><div><h3>Root vegetables</h3><p>Earthy, hearty &amp; homegrown</p><span class="product-price" data-price="root-vegetables">Price not set</span></div><button class="add-button" data-product="root-vegetables" type="button" aria-label="Add root vegetables to order" disabled>+</button></div>
+        </article>
+      </div>
+      <div class="harvest-footnote"><span>✳</span> Prices and availability are set by the farm. Orders are paid through PhonePe and collected at the farm.</div>
+    </section>
+
+    <section class="pickup-section" id="pickup">
+      <div class="pickup-leaf" aria-hidden="true">✳</div>
+      <div class="pickup-inner section-wrap" data-reveal>
+        <div><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> 03 / A simple pickup</p><h2>Good things<br>are <em>worth the trip.</em></h2></div>
+        <div class="pickup-content"><p>Choose available produce, pay through PhonePe checkout, and wait for the farm to confirm your collection.</p><a class="button button-light" href="#seasonal">Shop the harvest <span aria-hidden="true">↗</span></a><span class="pickup-reminder"><span class="pickup-star">✳</span> Farm collection only · no delivery</span></div>
+      </div>
+      <div class="pickup-bottom"><span>NIRVANA FARM</span><span>GROWN WITH CARE, SHARED WITH YOU.</span><span>THINK GREEN. EAT FRESH.</span></div>
+    </section>
+
+    <section class="admin-section" id="admin-view" hidden>
+      <div class="admin-wrap section-wrap">
+        <div class="admin-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> NIRVANA · OPERATIONS</p><h2>Farm<br><em>dashboard.</em></h2></div>
+          <span class="admin-demo-badge">ADMIN PORTAL</span>
+        </div>
+        <p class="admin-notice">Manage stock, set a sale unit and price, and add an optional unit cost. Revenue counts verified PhonePe payments only; product costs are snapshotted for new orders.</p>
+        <div class="admin-kpis" id="admin-kpis" aria-live="polite"></div>
+        <div class="admin-insights">
+          <section class="admin-panel">
+            <div class="admin-panel-heading"><h3>Stock overview</h3><span>Current inventory</span></div>
+            <div class="admin-mini-stats" id="admin-stock-summary"></div>
+          </section>
+          <section class="admin-panel">
+            <div class="admin-panel-heading"><h3>Most ordered</h3><span>Non-cancelled orders</span></div>
+            <div class="admin-top-products" id="admin-top-products"></div>
+          </section>
+        </div>
+        <section class="admin-panel admin-orders">
+          <div class="admin-panel-heading"><h3>Customer orders</h3><span>Latest first</span></div>
+          <div class="order-list" id="admin-order-list"></div>
+        </section>
+        <section class="admin-panel inventory-admin">
+          <div class="admin-panel-heading"><h3>Products, prices &amp; costs</h3><span>Use the same unit shown to customers</span></div>
+          <div id="admin-inventory-list"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">n</span><span>nirvana<span class="brand-period">.</span></span></a>
+    <span>Think green. Eat fresh.</span>
+    <button class="footer-admin-link" id="admin-open" type="button">Farm desk ↗</button>
+    <span class="copyright">© <span id="year"></span> Nirvana Farm · A growing story</span>
+  </footer>
+
+  <div class="overlay" id="account-modal" aria-hidden="true">
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close-modal type="button" aria-label="Close dialog">×</button>
+      <span class="modal-leaf" aria-hidden="true">✳</span>
+      <p class="eyebrow">A seat at our table</p>
+      <h2 id="modal-title">Welcome <em>back.</em></h2>
+      <p class="modal-copy">Sign in or create an account to order vegetables for farm collection.</p>
+      <div class="auth-tabs"><button class="auth-tab active" data-mode="signup" type="button">Create account</button><button class="auth-tab" data-mode="login" type="button">Sign in</button></div>
+      <form id="account-form">
+        <label for="account-name" id="name-label">Your name</label>
+        <input id="account-name" name="name" autocomplete="name" placeholder="How should we say hello?" required>
+        <label for="account-email">Email address</label>
+        <input id="account-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="account-password">Password</label>
+        <input id="account-password" name="password" type="password" autocomplete="new-password" minlength="12" maxlength="128" placeholder="At least 12 characters" required>
+        <p class="form-message" id="account-message" role="status" aria-live="polite"></p>
+        <button class="button button-dark modal-submit" type="submit">Continue <span>↗</span></button>
+      </form>
+      <p class="privacy-note">Passwords are stored as salted hashes. Use a unique password for this early-stage local app.</p>
+    </section>
+  </div>
+
+  <div class="overlay" id="request-modal" aria-hidden="true">
+    <section class="modal-card request-card" role="dialog" aria-modal="true" aria-labelledby="request-title">
+      <button class="modal-close" data-close-modal type="button" aria-label="Close dialog">×</button>
+      <p class="eyebrow">Your farm collection</p>
+      <h2 id="request-title">Your <em>order.</em></h2>
+      <form id="request-form">
+        <div class="request-items" id="request-items"></div>
+        <label for="request-name">Your name</label><input id="request-name" name="name" autocomplete="name" required>
+        <label for="request-email">Email address</label><input id="request-email" name="email" type="email" autocomplete="email" required>
+        <label for="request-note">Note for the farm <span class="optional">(optional)</span></label><textarea id="request-note" name="note" rows="2" placeholder="Anything you'd like us to know?"></textarea>
+        <button class="button button-dark modal-submit" type="submit">Continue to PhonePe <span>↗</span></button>
+        <p class="privacy-note">Payment is verified by PhonePe. Your pickup remains subject to farm confirmation; no delivery is offered.</p>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
